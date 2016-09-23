@@ -1,4 +1,6 @@
+from time import clock
 
+tiempo_inicial = clock()
 def MergeSort(A):
     #print("Dividir: ",A)
     if len(A)>1:
@@ -28,11 +30,13 @@ def MergeSort(A):
             A[k]=mitadder[j]
             j=j+1
             k=k+1
- 
   
 print ("Ordenamiento MERGESORT")
-A=[5,6,8,3]
 
+A=[5,6,8,3]
 print ("Numeros a Ordenar: ",A)
 MergeSort(A)
+tiempo_final = clock()
+
 print ("Numeros Ordenados son: ",A)
+print (tiempo_final - tiempo_inicial)

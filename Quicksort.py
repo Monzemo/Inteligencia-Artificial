@@ -1,4 +1,7 @@
 import random
+from time import clock
+
+tiempo_inicial = clock()
 R = random.Random(50)
 
 def qsort(L):
@@ -28,8 +31,11 @@ def swap(A,i,j):
 	A[i] = A[j]
 	A[j] = temp
 	
+	
 print("quicksort:\t\n")
 L = [3,1,4,1,5,9,2,6,5,3,5,8,9,7,9]
 print("tu arreglo desordenado  era:\t\n" ,L)
 qsort(L)
+tiempo_final = clock()
 print ('tu arreglo ordenado es:\n' ,L)
+print (tiempo_final - tiempo_inicial)
