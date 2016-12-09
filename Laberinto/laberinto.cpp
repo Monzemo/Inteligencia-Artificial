@@ -1,17 +1,9 @@
 /*
 0 : representa el camino a seguir, es decir un lugar valido por donde avanzar.
 1 : representa una pared.
-2 : representa la ubicación de un personaje por así decirlo; es decir va a ser el punto de partida.
+2 : representael punto de partida.
 3 : representa la salida del laberinto
-
-Recorriendo el laberinto, utilizando el metodo de la mano derecha, el cual es el mas largo pero el mas seguro consiste en 
-que si estas atrapado en un laberinto real, toques una pared con la mano derecha y sin dejar de tocarla recorras todo el 
-laberinto, tarde o temprano llegaras a la salida, siempre y cuando el laberinto no tenga caminos circulares y empieces en uno 
-de ellos. No es muy util en laberintos reales demasiado grandes, por la cuestion del tiempo, pero en una pc es diferente.
-
-Si no estamos junto a la meta avanzamos, simulando que vamos tocando la pared derechaavanzamos hacia el frente siempre y cuando 
-exista una pared a nuestra derechasi no, vemos hacia la derecha si no hay pared, si hay, volteamos a la izquierda
-y si no, como ultima opcion giramos hacia atras.*/
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
